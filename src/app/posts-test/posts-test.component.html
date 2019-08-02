@@ -1,0 +1,39 @@
+<div class="posts-container">
+  <div *ngIf="posts$">
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">TITLE</th>
+          <th scope="col" colspan="2">ACTIONS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let post of (posts$ | async)">
+          <td>{{ post.id }}</td>
+          <td [@inOutAnimation]>
+            <span *ngIf="post.spanVisible">
+              {{ post.title }}
+            </span>
+            <input #inputTitle *ngIf="post.inputVisible" type="text" [(ngModel)]="post.title" />
+          </td>
+          <td><button (click)="updatePost(post.id)">{{ post.btnText }}</button>
+          </td>
+          <td><button (click)="deletePost(post.id)">delete</button></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td><input #titleCreate type="text" /></td>
+          <td></td>
+          <td><button (click)="createUser(titleCreate.value)">create</button></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <div>
+
+  </div>
+</div>

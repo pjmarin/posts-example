@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 0,
+      "title": "json-server",
+      "author": "typicode",
+      "btnText": "edit",
+      "spanVisible": true,
+      "inputVisible": false
+    },
+    {
+      "id": 1,
+      "title": "json-server1",
+      "author": "typicode1",
+      "btnText": "edit",
+      "spanVisible": true,
+      "inputVisible": false
+    },
+    {
+      "id": 2,
+      "title": "json-server2",
+      "author": "typicode2",
+      "btnText": "edit",
+      "spanVisible": true,
+      "inputVisible": false
+    },
+    {
+      "id": 3,
+      "title": "json-server3",
+      "btnText": "edit",
+      "spanVisible": true,
+      "inputVisible": false
+    },
+    {
+      "id": 4,
+      "title": "json server4",
+      "btnText": "edit",
+      "spanVisible": true,
+      "inputVisible": false
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "json-server-test",
+  "version": "1.0.0",
+  "description": "simple json test server",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json"
+  },
+  "keywords": [
+    "test",
+    "json",
+    "server"
+  ],
+  "author": "pm",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "json-server": "^0.15.0"
+  }
+}
